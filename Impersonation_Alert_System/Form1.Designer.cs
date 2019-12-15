@@ -85,7 +85,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(866, 77);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Student Impersonation Alert System";
+            this.label1.Text = "Biometric Exam Verification System";
             // 
             // panel2
             // 

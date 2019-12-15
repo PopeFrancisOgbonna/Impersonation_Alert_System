@@ -33,6 +33,27 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.studentDataView = new System.Windows.Forms.DataGridView();
+            this.uploadCourse_Pane = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtcFaculty = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.btnClear_course = new System.Windows.Forms.Button();
+            this.btnUpload = new System.Windows.Forms.Button();
+            this.txtcLecturer = new System.Windows.Forms.TextBox();
+            this.cSemester = new System.Windows.Forms.NumericUpDown();
+            this.cLevel = new System.Windows.Forms.NumericUpDown();
+            this.cUnit = new System.Windows.Forms.NumericUpDown();
+            this.txtcCode = new System.Windows.Forms.TextBox();
+            this.txtcDept = new System.Windows.Forms.TextBox();
+            this.txtcTitle = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.dashBoardPane = new System.Windows.Forms.Panel();
             this.lblstafName = new System.Windows.Forms.Label();
             this.lblStaffWelcome = new System.Windows.Forms.Label();
@@ -67,27 +88,6 @@
             this.btnRcourseSearch = new System.Windows.Forms.Button();
             this.txtrCourseCode = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.uploadCourse_Pane = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtcFaculty = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.btnClear_course = new System.Windows.Forms.Button();
-            this.btnUpload = new System.Windows.Forms.Button();
-            this.txtcLecturer = new System.Windows.Forms.TextBox();
-            this.cSemester = new System.Windows.Forms.NumericUpDown();
-            this.cLevel = new System.Windows.Forms.NumericUpDown();
-            this.cUnit = new System.Windows.Forms.NumericUpDown();
-            this.txtcCode = new System.Windows.Forms.TextBox();
-            this.txtcDept = new System.Windows.Forms.TextBox();
-            this.txtcTitle = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.studentDataView = new System.Windows.Forms.DataGridView();
             this.staffDetail_Pane = new System.Windows.Forms.FlowLayoutPanel();
             this.grpStaff = new System.Windows.Forms.GroupBox();
             this.btnClear = new System.Windows.Forms.Button();
@@ -147,6 +147,12 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDataView)).BeginInit();
+            this.uploadCourse_Pane.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cSemester)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cUnit)).BeginInit();
             this.dashBoardPane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.verifyStudentPane.SuspendLayout();
@@ -158,12 +164,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.vFingerprint)).BeginInit();
             this.upLoadResultPane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.resultViewGride)).BeginInit();
-            this.uploadCourse_Pane.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cSemester)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cUnit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDataView)).BeginInit();
             this.staffDetail_Pane.SuspendLayout();
             this.grpStaff.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.staffPics)).BeginInit();
@@ -207,7 +207,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(926, 80);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Student Impersonation Alert System";
+            this.label1.Text = "Biometric Exam Verification System";
             // 
             // panel3
             // 
@@ -223,6 +223,255 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(914, 468);
             this.panel3.TabIndex = 3;
+            // 
+            // studentDataView
+            // 
+            this.studentDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.studentDataView.Location = new System.Drawing.Point(9, 302);
+            this.studentDataView.Name = "studentDataView";
+            this.studentDataView.Size = new System.Drawing.Size(898, 156);
+            this.studentDataView.TabIndex = 1;
+            this.studentDataView.Visible = false;
+            // 
+            // uploadCourse_Pane
+            // 
+            this.uploadCourse_Pane.Controls.Add(this.groupBox1);
+            this.uploadCourse_Pane.Location = new System.Drawing.Point(0, 0);
+            this.uploadCourse_Pane.Name = "uploadCourse_Pane";
+            this.uploadCourse_Pane.Size = new System.Drawing.Size(901, 293);
+            this.uploadCourse_Pane.TabIndex = 25;
+            this.uploadCourse_Pane.Visible = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtcFaculty);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.btnClear_course);
+            this.groupBox1.Controls.Add(this.btnUpload);
+            this.groupBox1.Controls.Add(this.txtcLecturer);
+            this.groupBox1.Controls.Add(this.cSemester);
+            this.groupBox1.Controls.Add(this.cLevel);
+            this.groupBox1.Controls.Add(this.cUnit);
+            this.groupBox1.Controls.Add(this.txtcCode);
+            this.groupBox1.Controls.Add(this.txtcDept);
+            this.groupBox1.Controls.Add(this.txtcTitle);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(9, 9);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(649, 281);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Courses";
+            // 
+            // txtcFaculty
+            // 
+            this.txtcFaculty.Location = new System.Drawing.Point(211, 155);
+            this.txtcFaculty.Name = "txtcFaculty";
+            this.txtcFaculty.Size = new System.Drawing.Size(413, 26);
+            this.txtcFaculty.TabIndex = 17;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(67, 158);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(67, 20);
+            this.label23.TabIndex = 16;
+            this.label23.Text = "Faculty";
+            // 
+            // btnClear_course
+            // 
+            this.btnClear_course.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnClear_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear_course.Location = new System.Drawing.Point(441, 226);
+            this.btnClear_course.Name = "btnClear_course";
+            this.btnClear_course.Size = new System.Drawing.Size(112, 44);
+            this.btnClear_course.TabIndex = 15;
+            this.btnClear_course.Text = "Clear";
+            this.btnClear_course.UseVisualStyleBackColor = false;
+            this.btnClear_course.Click += new System.EventHandler(this.btnClear_course_Click);
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload.Location = new System.Drawing.Point(304, 226);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(112, 44);
+            this.btnUpload.TabIndex = 14;
+            this.btnUpload.Text = "Upload";
+            this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // txtcLecturer
+            // 
+            this.txtcLecturer.Location = new System.Drawing.Point(211, 190);
+            this.txtcLecturer.Name = "txtcLecturer";
+            this.txtcLecturer.Size = new System.Drawing.Size(413, 26);
+            this.txtcLecturer.TabIndex = 13;
+            // 
+            // cSemester
+            // 
+            this.cSemester.Location = new System.Drawing.Point(588, 82);
+            this.cSemester.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.cSemester.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.cSemester.Name = "cSemester";
+            this.cSemester.Size = new System.Drawing.Size(37, 26);
+            this.cSemester.TabIndex = 12;
+            this.cSemester.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // cLevel
+            // 
+            this.cLevel.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.cLevel.Location = new System.Drawing.Point(569, 118);
+            this.cLevel.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.cLevel.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.cLevel.Name = "cLevel";
+            this.cLevel.Size = new System.Drawing.Size(56, 26);
+            this.cLevel.TabIndex = 11;
+            this.cLevel.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // cUnit
+            // 
+            this.cUnit.Location = new System.Drawing.Point(449, 85);
+            this.cUnit.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.cUnit.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.cUnit.Name = "cUnit";
+            this.cUnit.Size = new System.Drawing.Size(42, 26);
+            this.cUnit.TabIndex = 10;
+            this.cUnit.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // txtcCode
+            // 
+            this.txtcCode.Location = new System.Drawing.Point(210, 85);
+            this.txtcCode.Name = "txtcCode";
+            this.txtcCode.Size = new System.Drawing.Size(128, 26);
+            this.txtcCode.TabIndex = 9;
+            // 
+            // txtcDept
+            // 
+            this.txtcDept.Location = new System.Drawing.Point(210, 120);
+            this.txtcDept.Name = "txtcDept";
+            this.txtcDept.Size = new System.Drawing.Size(289, 26);
+            this.txtcDept.TabIndex = 8;
+            // 
+            // txtcTitle
+            // 
+            this.txtcTitle.Location = new System.Drawing.Point(210, 43);
+            this.txtcTitle.Name = "txtcTitle";
+            this.txtcTitle.Size = new System.Drawing.Size(414, 26);
+            this.txtcTitle.TabIndex = 7;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(67, 194);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(138, 20);
+            this.label22.TabIndex = 6;
+            this.label22.Text = "Course Lecturer";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(67, 130);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(104, 20);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "Department";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(343, 88);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(104, 20);
+            this.label20.TabIndex = 4;
+            this.label20.Text = "Course Unit";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(496, 85);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(86, 20);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "Semester";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(508, 120);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(51, 20);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Level";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(67, 88);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(113, 20);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Course Code";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(67, 49);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(105, 20);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Course Title";
             // 
             // dashBoardPane
             // 
@@ -598,255 +847,6 @@
             this.label24.Size = new System.Drawing.Size(168, 21);
             this.label24.TabIndex = 0;
             this.label24.Text = "Enter Course Code";
-            // 
-            // uploadCourse_Pane
-            // 
-            this.uploadCourse_Pane.Controls.Add(this.groupBox1);
-            this.uploadCourse_Pane.Location = new System.Drawing.Point(0, 0);
-            this.uploadCourse_Pane.Name = "uploadCourse_Pane";
-            this.uploadCourse_Pane.Size = new System.Drawing.Size(901, 293);
-            this.uploadCourse_Pane.TabIndex = 25;
-            this.uploadCourse_Pane.Visible = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtcFaculty);
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.btnClear_course);
-            this.groupBox1.Controls.Add(this.btnUpload);
-            this.groupBox1.Controls.Add(this.txtcLecturer);
-            this.groupBox1.Controls.Add(this.cSemester);
-            this.groupBox1.Controls.Add(this.cLevel);
-            this.groupBox1.Controls.Add(this.cUnit);
-            this.groupBox1.Controls.Add(this.txtcCode);
-            this.groupBox1.Controls.Add(this.txtcDept);
-            this.groupBox1.Controls.Add(this.txtcTitle);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(9, 9);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(649, 281);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Courses";
-            // 
-            // txtcFaculty
-            // 
-            this.txtcFaculty.Location = new System.Drawing.Point(211, 155);
-            this.txtcFaculty.Name = "txtcFaculty";
-            this.txtcFaculty.Size = new System.Drawing.Size(413, 26);
-            this.txtcFaculty.TabIndex = 17;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(67, 158);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(67, 20);
-            this.label23.TabIndex = 16;
-            this.label23.Text = "Faculty";
-            // 
-            // btnClear_course
-            // 
-            this.btnClear_course.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnClear_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear_course.Location = new System.Drawing.Point(441, 226);
-            this.btnClear_course.Name = "btnClear_course";
-            this.btnClear_course.Size = new System.Drawing.Size(112, 44);
-            this.btnClear_course.TabIndex = 15;
-            this.btnClear_course.Text = "Clear";
-            this.btnClear_course.UseVisualStyleBackColor = false;
-            this.btnClear_course.Click += new System.EventHandler(this.btnClear_course_Click);
-            // 
-            // btnUpload
-            // 
-            this.btnUpload.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpload.Location = new System.Drawing.Point(304, 226);
-            this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(112, 44);
-            this.btnUpload.TabIndex = 14;
-            this.btnUpload.Text = "Upload";
-            this.btnUpload.UseVisualStyleBackColor = false;
-            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
-            // 
-            // txtcLecturer
-            // 
-            this.txtcLecturer.Location = new System.Drawing.Point(211, 190);
-            this.txtcLecturer.Name = "txtcLecturer";
-            this.txtcLecturer.Size = new System.Drawing.Size(413, 26);
-            this.txtcLecturer.TabIndex = 13;
-            // 
-            // cSemester
-            // 
-            this.cSemester.Location = new System.Drawing.Point(588, 82);
-            this.cSemester.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.cSemester.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.cSemester.Name = "cSemester";
-            this.cSemester.Size = new System.Drawing.Size(37, 26);
-            this.cSemester.TabIndex = 12;
-            this.cSemester.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // cLevel
-            // 
-            this.cLevel.Increment = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.cLevel.Location = new System.Drawing.Point(569, 118);
-            this.cLevel.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.cLevel.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.cLevel.Name = "cLevel";
-            this.cLevel.Size = new System.Drawing.Size(56, 26);
-            this.cLevel.TabIndex = 11;
-            this.cLevel.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // cUnit
-            // 
-            this.cUnit.Location = new System.Drawing.Point(449, 85);
-            this.cUnit.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.cUnit.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.cUnit.Name = "cUnit";
-            this.cUnit.Size = new System.Drawing.Size(42, 26);
-            this.cUnit.TabIndex = 10;
-            this.cUnit.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // txtcCode
-            // 
-            this.txtcCode.Location = new System.Drawing.Point(210, 85);
-            this.txtcCode.Name = "txtcCode";
-            this.txtcCode.Size = new System.Drawing.Size(128, 26);
-            this.txtcCode.TabIndex = 9;
-            // 
-            // txtcDept
-            // 
-            this.txtcDept.Location = new System.Drawing.Point(210, 120);
-            this.txtcDept.Name = "txtcDept";
-            this.txtcDept.Size = new System.Drawing.Size(289, 26);
-            this.txtcDept.TabIndex = 8;
-            // 
-            // txtcTitle
-            // 
-            this.txtcTitle.Location = new System.Drawing.Point(210, 43);
-            this.txtcTitle.Name = "txtcTitle";
-            this.txtcTitle.Size = new System.Drawing.Size(414, 26);
-            this.txtcTitle.TabIndex = 7;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(67, 194);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(138, 20);
-            this.label22.TabIndex = 6;
-            this.label22.Text = "Course Lecturer";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(67, 130);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(104, 20);
-            this.label21.TabIndex = 5;
-            this.label21.Text = "Department";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(343, 88);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(104, 20);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Course Unit";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(496, 85);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(86, 20);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "Semester";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(508, 120);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(51, 20);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Level";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(67, 88);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(113, 20);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Course Code";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(67, 49);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(105, 20);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Course Title";
-            // 
-            // studentDataView
-            // 
-            this.studentDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studentDataView.Location = new System.Drawing.Point(9, 302);
-            this.studentDataView.Name = "studentDataView";
-            this.studentDataView.Size = new System.Drawing.Size(898, 156);
-            this.studentDataView.TabIndex = 1;
-            this.studentDataView.Visible = false;
             // 
             // staffDetail_Pane
             // 
@@ -1468,6 +1468,13 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.studentDataView)).EndInit();
+            this.uploadCourse_Pane.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cSemester)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cUnit)).EndInit();
             this.dashBoardPane.ResumeLayout(false);
             this.dashBoardPane.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1484,13 +1491,6 @@
             this.upLoadResultPane.ResumeLayout(false);
             this.upLoadResultPane.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.resultViewGride)).EndInit();
-            this.uploadCourse_Pane.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cSemester)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cUnit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDataView)).EndInit();
             this.staffDetail_Pane.ResumeLayout(false);
             this.grpStaff.ResumeLayout(false);
             this.grpStaff.PerformLayout();
